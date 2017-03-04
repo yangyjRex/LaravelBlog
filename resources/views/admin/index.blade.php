@@ -6,7 +6,7 @@
 		<div class="top_left">
 			<div class="logo">后台管理模板</div>
 			<ul>
-				<li><a href="#" class="active">首页</a></li>
+				<li><a href="{{url('admin/index')}}" class="active">首页</a></li>
 				<li><a href="#">管理页</a></li>
 			</ul>
 		</div>
@@ -26,10 +26,10 @@
             <li>
             	<h3><i class="fa fa-fw fa-clipboard"></i>常用操作</h3>
                 <ul class="sub_menu">
-                    <li><a href="add.html" target="main"><i class="fa fa-fw fa-plus-square"></i>添加页</a></li>
-                    <li><a href="list.html" target="main"><i class="fa fa-fw fa-list-ul"></i>列表页</a></li>
-                    <li><a href="tab.html" target="main"><i class="fa fa-fw fa-list-alt"></i>tab页</a></li>
-                    <li><a href="img.html" target="main"><i class="fa fa-fw fa-image"></i>图片列表</a></li>
+                    <li><a href="{{url('admin/category/create/')}}" target="main"><i class="fa fa-fw fa-plus-square"></i>添加分类</a></li>
+                    <li><a href="{{url('admin/category/')}}" target="main"><i class="fa fa-fw fa-list-ul"></i>全部分类</a></li>
+                    <li><a href="{{url('admin/article/create/')}}" target="main"><i class="fa fa-fw fa-list-alt"></i>添加文章</a></li>
+                    <li><a href="{{url('admin/article/')}}" target="main"><i class="fa fa-fw fa-image"></i>文章列表</a></li>
                 </ul>
             </li>
             <li>
@@ -54,7 +54,7 @@
 
 	<!--主体部分 开始-->
 	<div class="main_box">
-		<iframe src="{{url('admin/info')}}" frameborder="0" width="100%" height="100%" name="main"></iframe> 
+		<iframe  src="{{url('admin/info')}}" frameborder="0" width="100%" height="100%" name="main"></iframe>
 	</div>
 	<!--主体部分 结束-->
 
@@ -63,4 +63,7 @@
 		CopyRight © 2016. Powered By <a href="http://www.chenhua.club">http://www.chenhua.club</a>.
 	</div>
 	<!--底部 结束-->
+
+
+
 @endsection
