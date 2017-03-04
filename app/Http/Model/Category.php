@@ -10,6 +10,7 @@ class Category extends Model
     protected $table = 'category';
     protected $primaryKey = 'cate_id';
     public $timestamps = false;
+    protected $guarded = [];
 
     public static function tree(){
     	$category = Category::orderBy('cate_order')->get();
